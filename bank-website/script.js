@@ -73,8 +73,6 @@ const scroll=function(){
   lastscroll=curScroll
 }
 window.addEventListener('scroll',scroll)
-const span=document.createElement('span');
-siblings.forEach(sibling=>sibling.appendChild(span))
 //ACTIVE NAVIGATION
 const activeSection=(entries)=>{
   entries.forEach(entry=>{

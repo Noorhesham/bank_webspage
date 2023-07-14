@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #444;
   line-height: 1.9;
@@ -45,7 +45,6 @@ body {
   opacity: 0;
   transform: translateY(8rem);
 }
-
 
 .section__title {
   max-width: 80rem;
@@ -123,15 +122,24 @@ img {
   width: 100%;
   padding: 0 6rem;
   z-index: 100;
+  transition: all 0.4s;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.229);
 }
 
 /* nav and stickly class at the same time */
 .nav.sticky {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
-  
+  background-color: rgba(255, 255, 255, 0.829);
+  transform: translateY(-25px);
+  box-shadow: #222222a6 0 4px 7px 0px;
+  transition: all 0.4s;
 }
 
+.active-nav {
+  transition: all 0.3s;
+  border-bottom: var(--color-primary) solid 5px;
+}
 .nav__logo {
   height: 4.5rem;
   transition: all 0.3s;
@@ -218,7 +226,7 @@ h4 {
 
 .highlight::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -461,7 +469,7 @@ h4 {
 
 .dots__dot--active {
   /* background-color: #fff; */
-  background-color: #888;
+  background-color: var(--color-primary);
   opacity: 1;
 }
 
@@ -472,7 +480,7 @@ h4 {
 }
 
 .testimonial::before {
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   top: -5.7rem;
   left: -6.8rem;
